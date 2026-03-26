@@ -1,0 +1,15 @@
+A Machine Learning-based Approach for Crop Yield Prediction and Fertilizer Recommendation.
+
+*****************************************************
+Fertilizer Recommendation
+
+Algorithm / Model Used : GaussianNB
+Train Accuracy: 100%
+Test Accuracy: 100%
+
+*****************************************************
+Crop Yield Prediction
+
+Algorithm / Model Used : ExtraTreesRegressor.
+
+R2 Score : 0.99 (This model is regression so we used R2 score)

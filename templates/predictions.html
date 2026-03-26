@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title></title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="../static/assets/css/predictions.css">
+    <style>
+            
+                  
+            
+        h1 {
+            color:black;
+        }
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Crop Yield  Recommendation</a>         
+            <ul class="nav">
+          <li class="item">
+                    <a class="link" href="{{url_for('index')}}">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{{url_for('logins')}}">Login</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('predictions')}}">Prediction</a>
+                </li>
+  <li class="item">
+                    <a class="link" href="{{url_for('index')}}">Logout</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+          <h1 class="header-title">
+               
+                Prediction
+            </h1>
+			</br>
+			  <p class="header-subtitle">Crop Yield Prediction</p>   
+        </div>              
+                      
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    
+
+    <!-- service section -->
+    
+ 
+
+     
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            
+            <h6 class="section-title mb-6">Crop Yield  Prediction</h6>
+
+            <!-- row -->
+         
+            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:50px;">
+                <form action="{{ url_for('predicts')}}"method="post">
+
+    
+
+<div class="span5">
+       <div class="control-group">
+           
+            
+          
+                        <div class="controls">
+			 
+                            <center><b class="btn btn-primary">State_Name:</b>   <select   type="text"  name="State_Name" required="required" placeholder="style" width="300" style="width: 300px"></center>
+                                    
+                                <option value="1">Andaman and Nicobar Islands</option>
+                                 <option value="2">Andhra Pradesh</option>
+                                 <option value="3">Arunachal Pradesh</option>
+                                 <option value="4">Assam</option>
+                                 <option value="5">Bihar</option>
+                                 <option value="6">Chandigarh</option>
+                                 <option value="7">Chhattisgarh</option>
+                                 <option value="8">Dadra and Nagar Haveli</option>
+                                 <option value="9">Goa</option>
+                                 <option value="10">Gujarat</option>
+                                 <option value="11">Haryana</option>
+                                 <option value="12">Himachal Pradesh</option>
+                                 <option value="13">Jammu and Kashmir</option>
+                                 <option value="14">Jharkhand</option>
+                                 <option value="15">Karnataka</option>
+                                 <option value="16">Kerala</option>
+                                 <option value="17">Madhya Pradesh</option>
+                                 <option value="18">Maharashtra</option>
+                                 <option value="19">Manipur</option>
+                                 <option value="20">Meghalaya</option>
+                                 <option value="21">Mizoram</option>
+                                 <option value="22">Nagaland</option>
+                                 <option value="23">Odisha</option>
+                                 <option value="24">Puducherry</option>
+                                 <option value="25">Punjab</option>
+                                 <option value="26">Rajasthan</option>
+                                 <option value="27">Sikkim</option>
+                                 <option value="28">Tamil Nadu</option>
+                                 <option value="29">Telangana</option>
+                                 <option value="30">Tripura</option>
+                                 <option value="31">Uttar Pradesh</option>
+                                 <option value="32">Uttarakhand</option>
+                                 <option value="33">West Bengal</option>
+                                 
+                                
+                             </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         
+                            </div> 
+                        </br>
+
+                        <div class="controls">
+			 
+                            <center><b class="btn btn-primary">Season:</b>    <select   type="text"  name="Season" required="required" placeholder="style" width="300" style="width: 300px"></center>
+                                     <option value="1">Kharif</option>
+                                 <option value="2">Whole Year</option>
+                                 <option value="3">Autumn</option>
+                                 <option value="4">Rabi</option>
+                                 <option value="5">Summer</option>
+                                 <option value="6">Winter</option>
+                                
+                                 
+                             </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         
+                         
+                            </div> 
+                        </br>
+
+                        <div class="controls">
+			 
+                            <center><b class="btn btn-primary">Crop Type:</b>    <select   type="text"  name="Crop" required="required" placeholder="style" width="300" style="width: 300px"></center>
+                                     <option value="1">Arecanut</option>
+                                 <option value="2">Other Kharif pulses</option>
+                                 <option value="3">Rice</option>
+                                 <option value="4">Banana</option>
+                                 <option value="5">Cashewnut</option>
+                                 <option value="6">Coconut</option>
+                                 <option value="7">Dry ginger</option>
+                                 <option value="8">Sugarcane</option>
+                                 <option value="9">Sweet potato</option>
+                                 <option value="10">Tapioca</option>
+                                 <option value="11">Black pepper</option>
+                                 <option value="12">Dry chillies</option>
+                                 <option value="13">other oilseeds</option>
+                                 <option value="14">Turmeric</option>
+                                 <option value="15">Maize</option>
+                                 <option value="16">Moong(Green Gram)</option>
+                                 <option value="17">Urad</option>
+                                 <option value="18">Arhar/Tur</option>
+                                 <option value="19">Groundnut</option>
+                                 <option value="20">Sunflower</option>
+                                 <option value="21">Bajra</option>
+                                 <option value="22">Castor seed</option>
+                                 <option value="23">Cotton(lint)</option>
+                                 <option value="24">Horse-gram</option>
+                                 <option value="25">Jowar</option>
+                                 <option value="26">Korra</option>
+                                 <option value="27">Ragi</option>
+                                 <option value="28">Tobacco</option>
+                                 <option value="29">Gram</option>
+                                 <option value="30">Wheat</option>
+                                 <option value="31">Masoor</option>
+                                 <option value="32">Sesamum</option>
+                                 <option value="33">Linseed</option>
+                                 <option value="34">Safflower</option>
+                                 <option value="35">Onion</option>
+                                 <option value="36">other misc. pulses</option>
+                                 <option value="37">Samai</option>
+                                 <option value="38">Small millets</option>
+                                 <option value="39">Coriander</option>
+                                 <option value="40">Potato</option>
+                                 <option value="41">Other  Rabi pulses</option>
+                                 <option value="42">Soyabean</option>
+                                 <option value="43">Beans/Mutter(Vegetable)</option>
+                                 <option value="44">Bhindi</option>
+                                 <option value="45">Brinjal</option>
+                                 <option value="46">Citrus Fruit'</option>
+                                 <option value="47">Cucumber</option>
+                                 <option value="48">Grapes</option>
+                                 <option value="49">Mango</option>
+                                 <option value="50">Orange</option>
+                                 <option value="51">other fibres</option>
+                                 <option value="52">Other Fresh Fruits</option>
+                                 <option value="53">Other Vegetables</option>
+                                 <option value="54">Papaya</option>
+                                 <option value="55">Pome Fruit</option>
+                                 <option value="56">Tomato</option>
+                                 <option value="57">Mesta</option>
+                                 <option value="58">Cowpea(Lobia)</option>
+                                 <option value="59">Lemon</option>
+                                 <option value="60">Pome Granet</option>
+                                 <option value="61">Sapota</option>
+                                 <option value="62">Cabbage</option>
+                                 <option value="63">Rapeseed/Mustard'</option>
+                                 <option value="64">Peas  (vegetable)</option>
+                                 <option value="65">Niger seed</option>
+                                 <option value="66">Bottle Gourd</option>
+                                 <option value="67">Varagu</option>
+                                 <option value="68">Garlic</option>
+                                 <option value="69">Ginger</option>
+                                 <option value="70">Oilseeds total</option>
+                                 <option value="71">Pulses total</option>
+                                 <option value="72">Jute</option>
+                                 <option value="73">Peas / beans (Pulses)</option>
+                                 <option value="74">Blackgram</option>
+                                 <option value="75">Paddy</option>
+                                 <option value="76">Pineapple</option>
+                                 <option value="77">Barley</option>
+                                 <option value="78">Sannhamp</option>
+                                 <option value="79">Khesari</option>
+                                 <option value="80">Guar seed</option>
+                                 <option value="81">Moth</option>
+                                 <option value="82">Other Cereals & Millets</option>
+                                 <option value="83">Cond-spcs other</option>
+                                 <option value="84">Turnip</option>
+                                 <option value="85">Carrot</option>
+                                 <option value="86">Redish</option>
+                                 <option value="87">Arcanut (Processed)</option>
+                                 <option value="88">Atcanut (Raw)</option>
+                                 <option value="89">Cashewnut Processed</option>
+                                 <option value="90">Cashewnut Raw</option>
+                                 <option value="91">Cardamom</option>
+                                 <option value="92">Rubber</option>
+                                 <option value="93">Bitter Gourd</option>
+                                 <option value="94">Drum Stick</option>
+                                 <option value="95">Jack Fruit</option>
+                                 <option value="96">Snak Guard</option>
+                                 <option value="97">Tea</option>
+                                 <option value="98">Coffee</option>
+                                 <option value="99">Cauliflower</option>
+                                 <option value="100">Other Citrus Fruit</option>
+                                 <option value="101">Water Melon</option>
+                                 <option value="102">Total foodgrain</option>
+                                 <option value="103">Kapas</option>
+                                 <option value="104">Colocosia</option>
+                                 <option value="105">Lentil</option>
+                                 <option value="106">Bean</option>
+                                 <option value="107">Jobster</option>
+                                 <option value="108">Perilla</option>
+                                 <option value="109">Rajmash Kholar</option>
+                                 <option value="110">Ricebean (nagadal)</option>
+                                 <option value="111">Ash Gourd</option>
+                                 <option value="112">Beet Root</option>
+                                 <option value="113">Lab-Lab</option>
+                                 <option value="114">Ribed Guard</option>
+                                 <option value="115">Yam</option>
+                                 <option value="116">Pump Kin</option>
+                                 <option value="117">Apple</option>
+                                 <option value="118">Peach</option>
+                                 <option value="119">Pear</option>
+                                 <option value="120">Plums</option>
+                                 <option value="121">Litchi</option>
+                                 <option value="122">Ber</option>
+                                 <option value="123">Other Dry Fruit</option>
+                                 <option value="124">Jute & mesta</option>
+                             </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         
+                         
+                            </div> 
+                        </br>
+                        
+       <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Area: </b> <input type="text" name="Area" placeholder="Area" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div>
+          
+           
+          
+                        </br>		
+<div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-40px;">								 
+<center>  <button type="submit" class="btn btn-primary">Predict </button></center>
+</div>
+</form></br>
+</br>
+<center><h1 style="text-transform: capitalize;"> Production would be : {{ prod }} KGs  and Yield would be: {{prediction_text}} KGs/acre </h1></center>
+
+       </div>	 
+            
+       </div>
+
+
+ 
+</div>
+
+
+
+
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+    
+    
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+           
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="../static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="../static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="../static/assets/js/meyawo.js"></script>
+
+</body>
+</html>

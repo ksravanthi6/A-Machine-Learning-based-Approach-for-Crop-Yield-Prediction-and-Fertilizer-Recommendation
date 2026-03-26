@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title></title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="../static/assets/css/logins.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Crop Yield  Recommendation</a>         
+            <ul class="nav">
+               <li class="item">
+                    <a class="link" href="{{url_for('index')}}">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{{url_for('logins')}}">Login</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+           
+           
+  <h1 class="header-title">
+               
+                Login
+            </h1>
+			</br>
+			  <p class="header-subtitle">Crop Yield  Prediction</p>            
+           
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    
+
+    <!-- service section -->
+    
+ 
+
+     
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            
+            <h6 class="section-title mb-6">Login</h6>
+
+            <!-- row -->
+            <head>
+
+        
+         
+                <style>
+            
+            
+            body  {
+            background-image: url("../static/images/email3.jpg");
+             
+            }
+             
+             
+                </style>
+                   <script>
+                    addEventListener("load", function () {
+                        setTimeout(hideURLbar, 0);
+                    }, false);
+            
+                    function hideURLbar() {
+                        window.scrollTo(0, 1);
+                    }
+            
+                    function login(){
+                    var uname = document.getElementById("uname").value;
+                    var pwd = document.getElementById("pwd").value;
+            
+               if(uname == "admin" && pwd == "admin")
+               {
+                 alert("Login Success!");
+                 
+                 window.location = "{{url_for('uploads')}}";
+                 return false;
+               }
+               else
+               {
+               alert("Invalid Credentials!")
+               }
+                    }
+                  
+                    
+            
+            
+             
+                </script>
+               
+            </head>
+            
+             <body id="page-top">
+            
+               
+             
+            
+              <!-- Portfolio Section -->
+              <section class="page-section portfolio" id="portfolio">
+             
+                 
+                  <!-- Portfolio Section Heading -->
+                   
+                  <!-- Icon Divider -->
+                
+            
+                  <!-- Portfolio Grid Items -->
+                  <div class="row">
+            
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-md-8 col-lg-5" style="margin-left:320px">
+                      
+                   <div class="control-group">
+                           <!-- Username -->
+                          
+                           <label class="control-label"   for="username"><b>Username</b></label>
+                           <div class="controls">
+                             <input type="text" id="uname" name="uname" placeholder="" class="form-control">
+                            
+                          </div>
+                         </div>
+                         <div class="control-group">
+                           <!-- Password-->
+                          <br>
+                           <label class="control-label"  for="password"><b>Password</b></label>
+                           <div class="controls">
+                             <input type="password" id="pwd" name="pwd" placeholder="" class="form-control">
+                           
+                          </div>
+                         </div>
+                         <div class="col-md-6 col-lg-4" style="margin-left:-150px">
+                         <div class="control-group">
+                           <!-- Button -->
+                          <br>
+                           <div class="controls">
+                           
+                             <input type="button" class="btn btn-primary" value="Login" style="margin-left: 320px" onclick="login()">
+                           
+                          </div>
+                         </div>
+                         </div>
+              </div>
+              </div>
+             
+             
+              </section>
+            
+            
+              
+            
+                </body> 
+                     
+
+
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+    
+    
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+           
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="../static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="../static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="../static/assets/js/meyawo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title></title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="../static/assets/css/prediction.css">
+    <style>
+            
+                  
+            
+        h1 {
+            color:black;
+        }
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Fertilizer Recommendation</a>         
+            <ul class="nav">
+          <li class="item">
+                    <a class="link" href="{{url_for('index')}}">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{{url_for('login')}}">Login</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('prediction')}}">Prediction</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('performance')}}">Performance_analysis</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+          <h1 class="header-title">
+               
+                Prediction
+            </h1>
+			</br>
+			  <p class="header-subtitle">Fertilizer Prediction</p>   
+        </div>              
+                      
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    
+
+    <!-- service section -->
+    
+ 
+
+     
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            
+            <h6 class="section-title mb-6">Fertilizer Prediction</h6>
+
+            <!-- row -->
+         
+            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:50px;">
+                <form action="{{ url_for('predict')}}"method="post">
+
+    
+
+<div class="span5">
+       <div class="control-group">
+           
+            
+            
+            <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Temparature: </b> <input type="text" name="Temparature" placeholder="Temparature" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div>
+          </br>
+          <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Humidity: </b> <input type="text" name="Humidity" placeholder="Humidity" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div> 
+          </br>
+            <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Moisture: </b> <input type="text" name="Moisture" placeholder="Moisture" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div> 
+                        </br>
+                        <div class="controls">
+			 
+                            <center><b class="btn btn-primary">Soil Type:</b>   <select   type="text"  name="Soil" required="required" placeholder="style" width="300" style="width: 300px"></center>
+                                    
+                                <option value="1">Sandy</option>
+                                 <option value="2">Loamy</option>
+                                 <option value="3">Black</option>
+                                 <option value="4">Loamy</option>
+                                 <option value="5">Red</option>
+                                 <option value="6">Clayey</option>
+                                
+                             </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         
+                            </div> 
+                        </br>
+
+                        <div class="controls">
+			 
+                            <center><b class="btn btn-primary">Crop Type:</b>    <select   type="text"  name="Crop" required="required" placeholder="style" width="300" style="width: 300px"></center>
+                                     <option value="1">Maize</option>
+                                 <option value="2">Sugarcane</option>
+                                 <option value="3">Cotton</option>
+                                 <option value="4">Tobacco</option>
+                                 <option value="5">Paddy</option>
+                                 <option value="6">Barley</option>
+                                 <option value="7">Wheat</option>
+                                 <option value="8">Millets</option>
+                                 <option value="9">Oil seeds</option>
+                                 <option value="10">Pulses</option>
+                                 <option value="11">Ground Nuts</option>
+                                 
+                             </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         
+                         
+                            </div> 
+
+                        </br>
+                        
+       <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Nitrogen: </b> <input type="text" name="Nitrogen" placeholder="Nitrogen" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div>
+          </br>
+          <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Potassium: </b> <input type="text" name="Potassium" placeholder="Potassium" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div> 
+          </br>
+            <div class="controls">
+             
+      <center> <b class="btn btn-primary"> Phosphorous: </b> <input type="text" name="Phosphorous" placeholder="Phosphorous" required="required" width="300" style="width: 300px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+         
+          </div> 
+           </br>
+          
+                        </br>		
+<div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-40px;">								 
+<center>  <button type="submit" class="btn btn-primary">Predict </button></center>
+</div>
+</form></br>
+</br>
+<center><h1 style="text-transform: capitalize;"> Prediction is : {{ prediction_text }} </h1></center>
+
+       </div>	 
+            
+       </div>
+
+
+ 
+</div>
+
+
+
+
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+    
+    
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+           
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="../static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="../static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="../static/assets/js/meyawo.js"></script>
+
+</body>
+</html>

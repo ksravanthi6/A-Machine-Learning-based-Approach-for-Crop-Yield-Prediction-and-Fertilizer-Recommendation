@@ -1,0 +1,15 @@
+Temparature,Humidity ,Moisture,Soil Type,Crop Type,Nitrogen,Potassium,Phosphorous,Fertilizer Name
+26,52,38,Sandy,Maize,37,0,0,Urea
+34,65,38,Clayey,Paddy,39,0,0,Urea
+27,54,28,Clayey,Pulses,13,0,40,DAP
+29,58,52,Loamy,Wheat,13,0,36,DAP
+26,52,36,Clayey,Pulses,14,0,13,20-20
+29,58,40,Red,Ground Nuts,24,0,23,28-28
+27,54,30,Clayey,Pulses,13,0,13,20-20
+30,60,58,Loamy,Sugarcane,10,7,32,14-35-14
+32,62,34,Red,Tobacco,22,0,24,28-28
+33,64,51,Sandy,Maize,5,9,29,14-35-14
+31,62,63,Red,Cotton,11,12,15,17-17-17
+25,50,56,Loamy,Sugarcane,11,13,15,17-17-17
+34,65,45,Clayey,Paddy,6,19,21,10-26-26
+30,60,27,Red,Tobacco,4,17,17,10-26-26

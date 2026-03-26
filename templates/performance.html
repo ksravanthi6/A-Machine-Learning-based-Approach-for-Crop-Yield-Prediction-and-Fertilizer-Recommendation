@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title></title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="../static/assets/css/performance.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Fertilizer Recommendation</a>         
+            <ul class="nav">
+                   <li class="item">
+                    <a class="link" href="{{url_for('index')}}">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{{url_for('login')}}">Login</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('prediction')}}">Prediction</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('performance')}}">Performance_analysis</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('chart')}}">Chart</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+         
+           <div class="header-content container">
+          <h1 class="header-title">
+               
+                Performance_analysis
+            </h1>
+			</br>
+			  <p class="header-subtitle">Fertilizer Prediction</p>   
+        </div>              
+                      
+                   
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    
+
+    <!-- service section -->
+    
+ 
+
+     
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+           
+            <h6 class="section-title mb-6">Performance_analysis</h6>
+
+            <!-- row -->
+          <body>
+            <div><span style="margin-left:200px;color:green"><font size="12">recall,F1 and Precision </font></div>
+            </br>
+            </br>
+            <div><span style="margin-left:300px;color:black"><font size="12">   Recall f1 Precision </font></div> 
+            </br></br>
+           <div><span style="margin-left:100px;color:black"><font size="12"> 10-26-26 </font>
+           <span style="margin-left:50px;color:black"><font size="12">  1.00     1.00     1.00 </font>
+           </div> 
+           </br>
+           </br>
+           <div><span style="margin-left:100px;color:black"><font size="12">14-35-14 </font>
+           <span style="margin-left:50px;color:black"><font size="12">1.00     1.00     1.00</font>
+           </div>
+            </br></br>
+           <div><span style="margin-left:100px;color:black"><font size="12"> 17-17-17</font>
+           <span style="margin-left:50px;color:black"><font size="12">1.00     1.00     1.00</font>
+           </div> 
+           </br>
+           </br>
+           <div><span style="margin-left:150px;color:black"><font size="12">20-20</font>
+           <span style="margin-left:80px;color:black"><font size="12">1.00     1.00     1.00</font>
+           </div>
+		    </br></br>
+           <div><span style="margin-left:150px;color:black"><font size="12"> 28-28 </font>
+           <span style="margin-left:80px;color:black"><font size="12">1.00     1.00     1.00</font>
+           </div> 
+           </br>
+           </br>
+           <div><span style="margin-left:130px;color:black"><font size="12">DAP </font>
+           <span style="margin-left:120px;color:black"><font size="12">1.00     1.00     1.00</font>
+           </div>
+		    </br></br>
+           <div><span style="margin-left:130px;color:black"><font size="12">  Urea </font>
+           <span style="margin-left:120px;color:black"><font size="12">1.00     1.00     1.00</font>
+           </div> 
+            
+            
+           </div>  
+            </br>
+           </br>
+           </br>
+           
+           
+           <div class="col-lg-8 mx-auto">
+                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                       
+                                  
+                                 <div><span style="margin-left:170px;color:red"><font size="12">Confusion Matrix</font></div>
+                       </br>
+                       </br>
+                       
+                   <center>	    <div><img style="margin-left:60px;width:800px;height:500px;" src="../static/download.png"</div></center>
+                                          
+                                    
+                              
+                   </div>
+           
+           
+            
+           </body>
+
+
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+    
+    
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+           
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="../static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="../static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="../static/assets/js/meyawo.js"></script>
+
+</body>
+</html>

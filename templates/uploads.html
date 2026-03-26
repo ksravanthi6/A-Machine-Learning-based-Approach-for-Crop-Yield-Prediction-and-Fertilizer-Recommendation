@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title></title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="../static/assets/css/uploads.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Crop Yield  Recommendation</a>         
+            <ul class="nav">
+            <li class="item">
+                    <a class="link" href="{{url_for('index')}}">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="{{url_for('logins')}}">Login</a>
+                </li>
+				 <li class="item">
+                    <a class="link" href="{{url_for('uploads')}}">Upload</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+                       
+  <h1 class="header-title">
+               
+                Upload
+            </h1>
+			</br>
+			  <p class="header-subtitle">Crop Yield  Prediction</p>   
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    
+
+    <!-- service section -->
+    
+ 
+
+     
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            
+            <h6 class="section-title mb-6">Upload</h6>
+
+            <!-- row -->
+            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:100px;">
+		  
+                <form action="http://localhost:5000/previews" name="fs" id="fs" method="post" enctype=multipart/form-data>
+                             <br/>
+                            <input type="file" name="datasetfile" id="file1" required /> 
+                             <br/>
+                        <br/>
+                        <br/>
+                          <input type="submit" style="margin-right:230px" class="btn btn-success btn-large" value="Upload"> 
+                            </form>
+            </div>
+
+
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+    
+    
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+           
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="../static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="../static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="../static/assets/js/meyawo.js"></script>
+
+</body>
+</html>
